@@ -1,5 +1,6 @@
 package org.uni.info_app.android
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -151,37 +152,48 @@ fun bottom_bar(a: ComponentActivity) {
   BottomAppBar() {
     Box(Modifier.fillMaxSize(), Alignment.Center) {
       Row(horizontalArrangement = Arrangement.SpaceBetween) {
-        Text(a.getString(R.string.contacts_write_us))
+        Box(Modifier.fillMaxHeight(), Alignment.Center) {
+          Text(a.getString(R.string.contacts_write_us))
+        }
+
         small_contact_icon(R.drawable.telegram_icon) {
-          try {
-            a.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/andrewlemeshev123")))
-          } catch (e: Exception) {
-            a.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=org.telegram.messenger")));
-          }
+          start_messenger_or_market(a, "https://t.me/andrewlemeshev123", "org.telegram.messenger")
         }
         small_contact_icon(R.drawable.whatsapp_icon) {
-          try {
-            a.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("whatsapp://send?phone=+77476104485")))
-          } catch (e: Exception) {
-            a.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.whatsapp")));
-          }
+          start_messenger_or_market(a, "whatsapp://send?phone=+77476104485", "com.whatsapp")
         }
       }
     }
   }
 }
 
+fun start_messenger_or_market(a: ComponentActivity, uri_intent: String, package_name: String) {
+  try {
+    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri_intent))
+    intent.setPackage(package_name)
+    a.startActivity(intent)
+  } catch (e: Exception) {
+    try {
+      a.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$package_name")))
+    } catch(e: ActivityNotFoundException) {
+      a.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$package_name")))
+    }
+  }
+}
+
 @Composable
 fun small_contact_icon(icon_id: Int, on_click: () -> Unit) {
-  Image(
-    painterResource(icon_id),
-    "",
-    Modifier
-      .fillMaxHeight(0.6f)
-      .aspectRatio(1.0f)
-      .clickable {},
-    contentScale = ContentScale.Fit
-  )
+  Box(Modifier.fillMaxHeight(), Alignment.Center) {
+    Image(
+      painterResource(icon_id),
+      "",
+      Modifier
+        .fillMaxHeight(0.6f)
+        .aspectRatio(1.0f)
+        .clickable(onClick = on_click),
+      contentScale = ContentScale.Fit
+    )
+  }
 }
 
 @Composable

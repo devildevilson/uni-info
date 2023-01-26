@@ -34,32 +34,32 @@ class services_content_provider(val activity: ComponentActivity) : content_provi
       ) {
         pair_of_two_buttons(
           activity,
-          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Справка") {},
-          big_button_data(painterResource(R.drawable.ic_baseline_mail_32), "Справка") {}
+          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Услуга") {},
+          big_button_data(painterResource(R.drawable.ic_baseline_mail_32), "Услуга") {}
         )
 
         pair_of_two_buttons(
           activity,
-          big_button_data(painterResource(R.drawable.ic_baseline_calculate_32), "Справка") {},
-          big_button_data(painterResource(R.drawable.ic_baseline_contact_page_32), "Справка") {}
+          big_button_data(painterResource(R.drawable.ic_baseline_calculate_32), "Услуга") {},
+          big_button_data(painterResource(R.drawable.ic_baseline_contact_page_32), "Услуга") {}
         )
 
         pair_of_two_buttons(
           activity,
-          big_button_data(painterResource(R.drawable.ic_baseline_language_32), "Справка") {},
-          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Справка") {}
+          big_button_data(painterResource(R.drawable.ic_baseline_language_32), "Услуга") {},
+          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Услуга") {}
         )
 
         pair_of_two_buttons(
           activity,
-          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Справка") {},
-          big_button_data(painterResource(R.drawable.ic_baseline_mail_32), "Справка") {}
+          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Услуга") {},
+          big_button_data(painterResource(R.drawable.ic_baseline_mail_32), "Услуга") {}
         )
 
         pair_of_two_buttons(
           activity,
-          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Справка") {},
-          big_button_data(painterResource(R.drawable.ic_baseline_mail_32), "Справка") {}
+          big_button_data(painterResource(R.drawable.ic_baseline_article_32), "Услуга") {},
+          big_button_data(painterResource(R.drawable.ic_baseline_mail_32), "Услуга") {}
         )
       }
 //      Text(
