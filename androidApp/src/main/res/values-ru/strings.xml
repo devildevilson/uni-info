@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="nav_home">Главная</string>
+  <string name="nav_services">Услуги</string>
+  <string name="nav_account">Кабинет</string>
+  <string name="nav_settings">Настройки</string>
+  <string name="activity_login">Авторизация</string>
+  <string name="sign_in_text">Авторизация</string>
+  <string name="login_text">Войти</string>
+  <string name="username_placeholder">Имя пользователя</string>
+  <string name="password_placeholder">Пароль</string>
+  <string name="lang_ru">🇷🇺 Русский</string>
+  <string name="lang_en">🇺🇸 Английский</string>
+  <string name="lang_kk">🇰🇿 Казахский</string>
+  <string name="change_lang">Сменить язык</string>
+  <string name="go_to_site">Сайт</string>
+  <string name="feedback_text">Обратная связь</string>
+  <string name="feedback_media_text">Для СМИ</string>
+  <string name="phone_call_default">Телефонный звонок</string>
+  <string name="app_main_title">Uni Info</string>
+  <string name="activity_notification">Уведомления</string>
+  <string name="activity_contacts">Контакты</string>
+  <string name="contacts_phone_info2">Для международных звонков</string>
+  <string name="contacts_phone_info3">Контактный телефон</string>
+  <string name="contacts_phone_info1">Для звонков по Казахстану бесплатно</string>
+  <string name="contacts_send_email">Отправить письмо</string>
+  <string name="home_popular_services">Популярные услуги</string>
+  <string name="home_about_university">Об университете</string>
+  <string name="home_university_on_map">Университет на карте</string>
+  <string name="home_brief_info">Краткая информация</string>
+  <string name="home_key_metrics">Ключевые показатели</string>
+  <string name="contacts_write_us">"Пишите нам: "</string>
+</resources>

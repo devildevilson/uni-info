@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <application
+    android:icon="@mipmap/ic_launcher2"
+    android:label="@string/app_main_title"
+    android:allowBackup="false"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity
+      android:name=".main"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name=".login_activity"
+      android:exported="false"
+      android:label="Login Activity"
+      android:windowSoftInputMode="adjustResize" >
+    </activity>
+
+    <activity
+      android:name=".contacts_activity"
+      android:exported="false"
+      android:label="Contacts Activity">
+    </activity>
+
+    <activity
+      android:name=".notifications_activity"
+      android:exported="false"
+      android:label="Notifications Activity">
+    </activity>
+  </application>
+</manifest> 

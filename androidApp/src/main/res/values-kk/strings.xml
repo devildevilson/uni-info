@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="nav_home">Үй</string>
+  <string name="nav_services">Қызметтер</string>
+  <string name="nav_account">Кабинет</string>
+  <string name="nav_settings">Параметрлер</string>
+  <string name="activity_login">Авторизация</string>
+  <string name="sign_in_text">Авторизация</string>
+  <string name="login_text">Кіру үшін</string>
+  <string name="username_placeholder">Қолданушының аты</string>
+  <string name="password_placeholder">Құпия сөз</string>
+  <string name="lang_ru">🇷🇺 Орыс</string>
+  <string name="lang_en">🇺🇸 Ағылшын</string>
+  <string name="lang_kk">🇰🇿 Қазақ</string>
+  <string name="change_lang">Тілді өзгерту</string>
+  <string name="go_to_site">Сайт</string>
+  <string name="feedback_text">Кері байланыс</string>
+  <string name="feedback_media_text">БАҚ үшін</string>
+  <string name="phone_call_default">Телефон қоңырауы</string>
+  <string name="app_main_title">Uni Info</string>
+  <string name="activity_notification">Хабарландырулар</string>
+  <string name="activity_contacts">Контактілер</string>
+  <string name="contacts_phone_info3">Байланыс телефоны</string>
+  <string name="contacts_phone_info2">Халықаралық қоңыраулар үшін</string>
+  <string name="contacts_phone_info1">Қазақстан бойынша қоңырау шалу үшін тегін</string>
+  <string name="contacts_send_email">Электрондық поштаны жіберу</string>
+  <string name="home_popular_services">Танымал қызметтер</string>
+  <string name="home_about_university">Университет туралы</string>
+  <string name="home_university_on_map">Картадағы университет</string>
+  <string name="home_brief_info">Қысқаша ақпарат</string>
+  <string name="home_key_metrics">Негізгі көрсеткіштер</string>
+  <string name="contacts_write_us">"Бізге жазыңыз: "</string>
+</resources>
