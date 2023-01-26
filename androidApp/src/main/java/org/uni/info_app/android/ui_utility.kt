@@ -104,4 +104,34 @@ object ui_utility {
       }
     }
   }
+
+  @Composable
+  fun additional_top_appbar_variant(a: ComponentActivity, title: String) {
+    TopAppBar() {
+      Box(modifier = Modifier.fillMaxSize()) {
+        Box(contentAlignment = Alignment.CenterStart) {
+          IconButton(
+            onClick = { a.finish() },
+            modifier = Modifier
+              .padding(10.dp)
+              .fillMaxHeight()
+              .aspectRatio(1f)
+          ) {
+            Icon(
+              imageVector = Icons.Filled.Close,
+              contentDescription = "",
+              modifier = Modifier.fillMaxSize()
+            )
+          }
+        }
+
+        Box(
+          modifier = Modifier.fillMaxSize(),
+          contentAlignment = Alignment.Center,
+        ) {
+          Text(title, fontSize = 23.sp)
+        }
+      }
+    }
+  }
 }

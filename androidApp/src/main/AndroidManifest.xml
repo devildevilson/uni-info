@@ -37,5 +37,7 @@
       android:exported="false"
       android:label="Notifications Activity">
     </activity>
+
+    <activity android:name=".brief_info_activity" android:exported="false" />
   </application>
 </manifest> 

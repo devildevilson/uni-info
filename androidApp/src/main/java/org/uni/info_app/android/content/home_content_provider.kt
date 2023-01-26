@@ -19,7 +19,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.uni.info_app.android.R
+import org.uni.info_app.android.brief_info_activity
 import org.uni.info_app.android.content_provider_interface
+import org.uni.info_app.android.login_activity
 
 
 class home_content_provider(val activity: ComponentActivity) : content_provider_interface {
@@ -93,7 +95,11 @@ class home_content_provider(val activity: ComponentActivity) : content_provider_
           Arrangement.SpaceEvenly
         ) {
           about_buttons_string.forEachIndexed { index, s_id ->
-            big_about_button(index, activity.getString(s_id)) {}
+            big_about_button(index, activity.getString(s_id)) {
+              if (s_id == R.string.home_brief_info) {
+                activity.startActivity(Intent(activity, brief_info_activity::class.java))
+              }
+            }
           }
         }
 
